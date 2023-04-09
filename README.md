@@ -1,1 +1,1 @@
-# 6998-assignment2-photo-album
+# 6998-assignment2-frontend

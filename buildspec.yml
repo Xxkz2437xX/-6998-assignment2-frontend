@@ -12,6 +12,7 @@ phases:
     commands:
       - cd $CODEBUILD_SRC_DIR
       - echo "after build"
+      - ls
       # deploy Frontend
       # - aws s3 sync ./frontend s3://xxzkbxx-cs6998-a2-frontend
 artifacts:

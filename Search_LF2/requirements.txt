@@ -1,3 +1,0 @@
-opensearch-py
-inflection
-requests_aws4auth

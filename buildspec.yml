@@ -6,15 +6,13 @@ phases:
     commands:
       - cd $CODEBUILD_SRC_DIR
       - echo "Build started on `date`"
-      - cd frontend && zip -r ../frontend.zip *
+      # - cd frontend && zip -r ../frontend.zip *
 
   post_build:
     commands:
       - cd $CODEBUILD_SRC_DIR
-      - echo "after build"
+      - echo "sync frontend code to s3"
       - ls
       # deploy Frontend
-      # - aws s3 sync ./frontend s3://xxzkbxx-cs6998-a2-frontend
-artifacts:
-  files:
-    - 'frontend.zip'
+      - aws s3 sync ./frontend s3://xxzkbxx-cs6998-a2-frontend
+

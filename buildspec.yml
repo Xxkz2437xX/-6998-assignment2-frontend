@@ -14,7 +14,7 @@ phases:
       - echo "sync frontend code to s3"
       - ls
       # deploy Frontend
-      - aws s3 sync ./frontend s3://xxzkbxx-cs6998-a2-frontend
+      # - aws s3 sync ./frontend s3://xxzkbxx-cs6998-a2-frontend
       
 artifacts:
   type: zip

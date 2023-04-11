@@ -15,4 +15,11 @@ phases:
       - ls
       # deploy Frontend
       - aws s3 sync ./frontend s3://xxzkbxx-cs6998-a2-frontend
+      
+artifacts:
+  type: zip
+  files:
+    - frontend/*
+  name: frontend.zip
+      
 
